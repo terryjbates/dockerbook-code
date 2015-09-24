@@ -37,4 +37,4 @@ done
 popd
 
 docker daemon &
-exec java -jar /opt/jenkins/jenkins.war
+exec /usr/lib/jvm/java-7-openjdk-amd64/bin/java -jar /opt/jenkins/jenkins.war

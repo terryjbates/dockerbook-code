@@ -16,5 +16,8 @@ RUN for plugin in chucknorris greenballs scm-api git-client git ws-cleanup;\
     -L $JENKINS_MIRROR/plugins/${plugin}/latest/${plugin}.hpi ; done
 ADD ./dockerjenkins.sh /usr/local/bin/dockerjenkins.sh
 RUN chmod +x /usr/local/bin/dockerjenkins.sh
+RUN apt-get -y  install openjdk-7-jre
 VOLUME /var/lib/docker
 EXPOSE 8080
+ENTRYPOINT [ "/usr/local/bin/dockerjenkins.sh"]
+
