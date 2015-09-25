@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Terry Bates terryjbates@gmail.com
+MAINTAINER Terry Bates terry@example.com
 ENV REFRESHED_AT 2015-09-24
 
 RUN apt-get update -qq && apt-get install -qqy curl
